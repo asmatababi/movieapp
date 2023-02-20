@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Rate from "./Rate";
 
+
 const Filter = ({ title, setTitle, rating, setRating }) => {
   return (
     <div className="my-5">

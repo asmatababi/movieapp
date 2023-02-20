@@ -2,8 +2,12 @@ import { useState } from "react";
 import AddMovie from "./components/AddMovie";
 import Filter from "./components/Filter";
 import MovieList from "./components/MovieList";
-
+import "./App.css";
 import { moviesData } from "./components/data";
+import Description from "./components/Description";
+import Home from "./components/Home";
+import {Route,Routes, Navigate} from "react-router-dom";
+
 
 function App() {
   const [title, setTitle] = useState("");
@@ -16,16 +20,12 @@ function App() {
   return (
     <div className="container">
       <div className="row">
-        <div className="col-md-6 offset-md-3">
-          <Filter
-            title={title}
-            setTitle={setTitle}
-            rating={rating}
-            setRating={setRating}
-          />
-          <AddMovie addMovie={addMovie}/>
-          <MovieList moviesData={moviesData} title={title} rating={rating} />
-        </div>
+        <Routes>
+          <Route path="/" element={<Navigate to="/movie" />} />
+          <Route path="/movie" element={<Home title={title} setTitle={setTitle} rating={rating} setRating={setRating} addMovie={addMovie} moviesData={moviesData} />} />
+          <Route path="/movie/:id" element={<Description movies={moviesData} />} />
+        </Routes>
+        
       </div>
     </div>
   );

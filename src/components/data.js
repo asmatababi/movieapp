@@ -16,7 +16,7 @@ export const moviesData =[
         description: "La jeune Thale vient juste de déménager avec ses deux parents dans une petite ville, après que sa mère a trouvé un nouveau boulot dans la police locale.",
         posterURL: "https://resizing.flixster.com/KjIKqZnj2-5bQJRuujpTYGaolmk=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzBjNzRjYTMwLTc5ZWMtNDZiNS04MjAzLTJiNjkzYjg3MTNjYS5qcGc=",
         rating: 4,
-        trailer: "https://www.youtube.com/watch?v=6sxnOLRGkhw",
+        trailer: "https://www.youtube.com/embed/6sxnOLRGkhw",
       },
       { id:3,
         title: "The Guilty",
@@ -25,6 +25,6 @@ export const moviesData =[
         description: "The Guilty is inspired by the 2018 film of the same name, directed by Gustav Moller. This 2021 adaptation has been written by Nic Pizzolatto and directed by Antoine Fuqua. ... The film takes you on a journey where you see a protagonist burdened by guilt, and everything he touches just breaks into fragments.",
         posterURL: "https://fr.web.img4.acsta.net/c_310_420/pictures/21/08/31/11/07/4346618.jpg",
         rating: 3,
-        trailer: "https://www.youtube.com/watch?v=NaB_ERMAZu4",
+        trailer: "https://www.youtube.com/embed/NaB_ERMAZu4",
       },
     ];

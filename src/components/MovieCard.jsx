@@ -1,8 +1,10 @@
 import React from "react";
 import Rate from "./Rate";
 
+import {Link} from "react-router-dom"; 
+
 const MovieCard = ({ movie }) => {
-  const { posterURL, title, description, rating } = movie;
+  const { posterURL, title, description, rating, id } = movie;
   return (
     <div className="card mb-3">
       <img src={posterURL} alt="" className="card-img-top" />
@@ -10,9 +12,9 @@ const MovieCard = ({ movie }) => {
         <h5 className="card-title">{title}</h5>
         <Rate rating={rating} />
         <p className="card-text">{description}</p>
-        <a href="#!" className="btn btn-primary">
+        <Link to={`/movie/${id}`} className="btn btn-primary">
           Read More
-        </a>
+        </Link>
       </div>
     </div>
   );
